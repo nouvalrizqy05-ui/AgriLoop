@@ -77,9 +77,34 @@ export default function KonsumenDashboardPage() {
       fetch("/api/pickup-points"),
       fetch("/api/orders"),
     ]);
-    setProducts(await productsRes.json());
-    setPickupPoints(await pickupRes.json());
-    setOrders(await ordersRes.json());
+    try {
+      const pText = await productsRes.text();
+      const ppText = await pickupRes.text();
+      const oText = await ordersRes.text();
+      
+      if (productsRes.ok && pText) {
+        setProducts(JSON.parse(pText));
+      } else {
+        console.error("Products fetch failed or empty:", productsRes.status, pText);
+        setProducts([]);
+      }
+      
+      if (pickupRes.ok && ppText) {
+        setPickupPoints(JSON.parse(ppText));
+      } else {
+        console.error("Pickup points fetch failed or empty:", pickupRes.status, ppText);
+        setPickupPoints([]);
+      }
+      
+      if (ordersRes.ok && oText) {
+        setOrders(JSON.parse(oText));
+      } else {
+        console.error("Orders fetch failed or empty:", ordersRes.status, oText);
+        setOrders([]);
+      }
+    } catch (err) {
+      console.error("JSON Parse Error:", err);
+    }
     setLoading(false);
   }, []);
 

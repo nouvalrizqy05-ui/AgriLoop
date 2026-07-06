@@ -76,10 +76,38 @@ export default function DistributorDashboardPage() {
       fetch("/api/products"),
       fetch("/api/orders"),
     ]);
-    setProducts(await productsRes.json());
-    const allProducts: Product[] = await allProductsRes.json();
-    setAllCategories(Array.from(new Set(allProducts.map((p) => p.category))).sort());
-    setOrders(await ordersRes.json());
+    try {
+      const pText = await productsRes.text();
+      const allPText = await allProductsRes.text();
+      const oText = await ordersRes.text();
+      
+      let parsedProducts: Product[] = [];
+      let parsedAllProducts: Product[] = [];
+      let parsedOrders: Order[] = [];
+
+      if (productsRes.ok && pText) {
+        parsedProducts = JSON.parse(pText);
+        setProducts(parsedProducts);
+      } else {
+        console.error("Products fetch failed or empty:", productsRes.status, pText);
+        setProducts([]);
+      }
+      
+      if (allProductsRes.ok && allPText) {
+        parsedAllProducts = JSON.parse(allPText);
+        setAllCategories(Array.from(new Set(parsedAllProducts.map((p: Product) => p.category))).sort());
+      }
+
+      if (ordersRes.ok && oText) {
+        parsedOrders = JSON.parse(oText);
+        setOrders(parsedOrders);
+      } else {
+        console.error("Orders fetch failed or empty:", ordersRes.status, oText);
+        setOrders([]);
+      }
+    } catch (err) {
+      console.error("JSON Parse Error:", err);
+    }
     setLoading(false);
   }, [categoryFilter]);
 

@@ -59,8 +59,26 @@ export default function PetaniDashboardPage() {
       fetch("/api/products?mine=true"),
       fetch("/api/orders"),
     ]);
-    setProducts(await productsRes.json());
-    setOrders(await ordersRes.json());
+    try {
+      const pText = await productsRes.text();
+      const oText = await ordersRes.text();
+      
+      if (productsRes.ok && pText) {
+        setProducts(JSON.parse(pText));
+      } else {
+        console.error("Products fetch failed or empty:", productsRes.status, pText);
+        setProducts([]);
+      }
+      
+      if (ordersRes.ok && oText) {
+        setOrders(JSON.parse(oText));
+      } else {
+        console.error("Orders fetch failed or empty:", ordersRes.status, oText);
+        setOrders([]);
+      }
+    } catch (err) {
+      console.error("JSON Parse Error:", err);
+    }
     setLoading(false);
   }, []);
 
