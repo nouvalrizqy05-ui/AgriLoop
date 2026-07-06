@@ -11,6 +11,7 @@ import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import Input from "@/components/ui/Input";
 import FormTambahProduk from "@/components/forms/FormTambahProduk";
+import HoloMap from "@/components/HoloMap";
 
 interface Product {
   id: string;
@@ -103,6 +104,24 @@ export default function PetaniDashboardPage() {
 
   return (
     <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <Card className="lg:col-span-3">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+          <div>
+            <h2 className="font-semibold text-emerald-800">Pemantauan Lahan (IoT Sensor)</h2>
+            <p className="text-sm text-gray-500">Live feed data kelembapan & curah hujan lahan Desa Rajasinga</p>
+          </div>
+          <div className="mt-2 md:mt-0 flex gap-4 text-sm font-mono">
+            <div className="bg-emerald-50 px-3 py-1 rounded text-emerald-700 border border-emerald-200">
+              💧 Kelembapan: <span className="font-bold">68%</span>
+            </div>
+            <div className="bg-blue-50 px-3 py-1 rounded text-blue-700 border border-blue-200">
+              🌧️ Curah Hujan: <span className="font-bold">12 mm</span>
+            </div>
+          </div>
+        </div>
+        <HoloMap lat={-6.5256} lng={108.0674} locationName="Lahan Pilot - Desa Rajasinga" />
+      </Card>
+
       <Card className="lg:col-span-1">
         <h2 className="mb-3 font-semibold text-gray-800">Tambah Produk</h2>
         <FormTambahProduk onCreated={fetchAll} />

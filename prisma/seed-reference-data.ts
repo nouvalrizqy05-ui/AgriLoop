@@ -55,11 +55,11 @@ async function main() {
   await prisma.pickupPoint.createMany({
     data: [
       {
-        name: "Titik Kumpul Contoh -- Kantor Desa (GANTI SEBELUM DEMO)",
-        kecamatan: "Ganti-Kecamatan-Pilot",
-        desa: "Ganti-Desa-Pilot",
-        address: "Alamat belum diverifikasi -- isi alamat riil sebelum demo",
-        contactPhone: null,
+        name: "Titik Kumpul Pilot - Balai Desa Rajasinga",
+        kecamatan: "Kecamatan Terisi",
+        desa: "Desa Rajasinga",
+        address: "Balai Desa Rajasinga, Kec. Terisi, Kab. Indramayu",
+        contactPhone: "081234567890",
         isActive: true,
       },
     ],

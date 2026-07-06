@@ -7,7 +7,7 @@ import { checkRateLimit, getClientIdentifier } from "@/lib/rate-limit";
 
 export async function GET(req: Request) {
   const identifier = getClientIdentifier(req);
-  const rl = checkRateLimit(`products:get:${identifier}`, { limit: 60, windowMs: 60_000 });
+  const rl = await checkRateLimit(`products:get:${identifier}`, { limit: 60, windowMs: 60_000 });
   if (!rl.allowed) {
     return NextResponse.json(
       { error: "Terlalu banyak permintaan. Coba lagi sebentar lagi." },

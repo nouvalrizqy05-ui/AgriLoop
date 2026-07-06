@@ -27,7 +27,7 @@ export const authOptions: NextAuthOptions = {
         // terhadap satu akun spesifik terlepas dari berapa banyak IP yang
         // dipakai penyerang. Ini pelengkap, BUKAN pengganti, kebijakan
         // password yang kuat (sudah ada minimal 8 karakter di validations.ts).
-        const rl = checkRateLimit(`login:${credentials.email.toLowerCase()}`, {
+        const rl = await checkRateLimit(`login:${credentials.email.toLowerCase()}`, {
           limit: 5,
           windowMs: 15 * 60_000,
         });

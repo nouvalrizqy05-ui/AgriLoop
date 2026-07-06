@@ -39,8 +39,9 @@ model User {
   phone        String?
   createdAt    DateTime  @default(now())
   updatedAt    DateTime  @updatedAt
-  products     Product[] @relation("PetaniProducts")
-  orders       Order[]   @relation("BuyerOrders")
+  products     Product[]    @relation("PetaniProducts")
+  orders       Order[]      @relation("BuyerOrders")
+  sensorData   SensorData[]
 }
 
 model Product {
@@ -136,4 +137,16 @@ model PriceHistory {
   recordedAt DateTime @default(now())
 
   @@index([category, region])
+}
+
+// Model baru untuk simulasi IoT Webhook
+model SensorData {
+  id          String   @id @default(cuid())
+  petaniId    String
+  petani      User     @relation(fields: [petaniId], references: [id])
+  moisture    Float    // Kelembapan tanah (%)
+  rainfall    Float    // Curah hujan (mm)
+  recordedAt  DateTime @default(now())
+
+  @@index([petaniId])
 }

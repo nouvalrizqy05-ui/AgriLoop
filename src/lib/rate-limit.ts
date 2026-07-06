@@ -1,71 +1,62 @@
-// Rate limiter in-memory sederhana untuk endpoint publik.
-//
-// KETERBATASAN YANG PERLU DIPAHAMI (jangan diklaim lebih dari ini):
-// - State disimpan di memori proses Node.js, BUKAN di Redis/database eksternal.
-// - Ini berarti limiter ini HANYA benar di deployment single-instance
-//   (mis. satu instance Railway/VPS). Kalau di-deploy ke platform serverless
-//   dengan multiple instance (Vercel dengan banyak lambda paralel), setiap
-//   instance punya counter sendiri-sendiri -- rate limit efektif jadi lebih
-//   longgar dari yang terlihat di angka konfigurasi.
-// - State hilang setiap kali server restart/redeploy.
-// - Untuk produksi sungguhan, ganti dengan solusi terpusat seperti
-//   Upstash Redis + @upstash/ratelimit. Ini SENGAJA tidak dipakai sekarang
-//   karena menambah dependency infrastruktur (Redis) yang belum ada di
-//   Tier 1, sesuai keputusan blueprint untuk tidak menambah kompleksitas
-//   di luar yang benar-benar dibutuhkan MVP kompetisi.
-//
-// Untuk kebutuhan demo/live-judging kompetisi (single instance, traffic
-// rendah-menengah), pendekatan ini cukup memadai sebagai lapisan proteksi
-// dasar terhadap penyalahgunaan endpoint publik.
+import { Ratelimit } from "@upstash/ratelimit";
+import { Redis } from "@upstash/redis";
 
-interface RateLimitEntry {
-  count: number;
-  resetAt: number;
-}
+const redisUrl = process.env.UPSTASH_REDIS_REST_URL;
+const redisToken = process.env.UPSTASH_REDIS_REST_TOKEN;
 
-const store = new Map<string, RateLimitEntry>();
+// Buat instance Redis jika env terkonfigurasi
+const redis = redisUrl && redisToken ? new Redis({
+  url: redisUrl,
+  token: redisToken,
+}) : null;
+
+// Cache untuk menyimpan instance ratelimit agar tidak perlu recreate setiap saat
+const ratelimitCache = new Map<string, Ratelimit>();
 
 interface RateLimitOptions {
   limit: number;
   windowMs: number;
 }
 
-export function checkRateLimit(
+export async function checkRateLimit(
   identifier: string,
   options: RateLimitOptions
-): { allowed: boolean; remaining: number; resetAt: number } {
-  const now = Date.now();
-  const entry = store.get(identifier);
-
-  if (!entry || entry.resetAt < now) {
-    const resetAt = now + options.windowMs;
-    store.set(identifier, { count: 1, resetAt });
-    return { allowed: true, remaining: options.limit - 1, resetAt };
+): Promise<{ allowed: boolean; remaining: number; resetAt: number }> {
+  // Jika Redis belum terkonfigurasi, kita bypass rate limit sementara (untuk development)
+  // Untuk production, pastikan credentials ini diset dengan benar.
+  if (!redis) {
+    console.warn("Upstash Redis credentials are not set. Bypassing rate limit.");
+    return { allowed: true, remaining: options.limit, resetAt: Date.now() + options.windowMs };
   }
 
-  if (entry.count >= options.limit) {
-    return { allowed: false, remaining: 0, resetAt: entry.resetAt };
+  // Hitung window dalam detik/menit agar sesuai format Upstash
+  const windowSecs = Math.max(1, Math.floor(options.windowMs / 1000));
+  const cacheKey = `${options.limit}:${windowSecs}s`;
+
+  let ratelimit = ratelimitCache.get(cacheKey);
+  if (!ratelimit) {
+    ratelimit = new Ratelimit({
+      redis: redis,
+      limiter: Ratelimit.slidingWindow(options.limit, `${windowSecs} s`),
+      analytics: true,
+      prefix: "@upstash/ratelimit",
+    });
+    ratelimitCache.set(cacheKey, ratelimit);
   }
 
-  entry.count += 1;
-  store.set(identifier, entry);
-  return { allowed: true, remaining: options.limit - entry.count, resetAt: entry.resetAt };
+  const { success, limit, reset, remaining } = await ratelimit.limit(identifier);
+
+  return {
+    allowed: success,
+    remaining: remaining,
+    resetAt: reset,
+  };
 }
 
 export function getClientIdentifier(req: Request): string {
   // x-forwarded-for bisa dipalsukan oleh client, tapi di belakang reverse
   // proxy platform hosting (Vercel/Railway) header ini biasanya di-set ulang
   // oleh proxy itu sendiri sehingga cukup dipercaya untuk kasus demo ini.
-  // Untuk keamanan produksi sungguhan, verifikasi platform hosting spesifik
-  // mana yang dipakai dan header mana yang benar-benar bisa dipercaya.
   const forwarded = req.headers.get("x-forwarded-for");
   return forwarded?.split(",")[0].trim() || "unknown";
 }
-
-// Cleanup periodik supaya Map tidak membengkak tanpa batas di long-running process.
-setInterval(() => {
-  const now = Date.now();
-  for (const [key, entry] of store.entries()) {
-    if (entry.resetAt < now) store.delete(key);
-  }
-}, 60_000);

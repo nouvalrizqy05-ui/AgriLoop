@@ -6,7 +6,7 @@ import { checkRateLimit, getClientIdentifier } from "@/lib/rate-limit";
 
 export async function POST(req: Request) {
   const identifier = getClientIdentifier(req);
-  const rl = checkRateLimit(`register:${identifier}`, { limit: 5, windowMs: 60 * 60_000 });
+  const rl = await checkRateLimit(`register:${identifier}`, { limit: 5, windowMs: 60 * 60_000 });
   if (!rl.allowed) {
     return NextResponse.json(
       { error: "Terlalu banyak percobaan registrasi. Coba lagi dalam 1 jam." },
