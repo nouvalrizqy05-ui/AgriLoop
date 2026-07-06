@@ -1,0 +1,27 @@
+provinsi,crop_type,tahun,variety,luas_tanam_ha,keterangan
+Jawa Timur,padi,2023,Ciherang,850,Dominan di sawah irigasi
+Jawa Timur,padi,2023,Inpari32,320,Unggul baru Kementan
+Jawa Timur,padi,2023,IR64,180,Masih dipakai petani tua
+Jawa Timur,jagung,2023,Pioneer36,430,Hybrid, produktivitas tinggi
+Jawa Timur,jagung,2023,NK7328,280,Populer di Jember
+Jawa Tengah,padi,2023,Ciherang,720,Dominan
+Jawa Tengah,padi,2023,Memberamo,90,Daerah rawan banjir
+Jawa Tengah,kedelai,2023,Grobogan,380,Varietas lokal unggulan
+Jawa Tengah,kedelai,2023,Anjasmoro,210,Nasional
+Jawa Barat,padi,2023,Ciherang,650,Dominan
+Jawa Barat,padi,2023,Inpari32,290,Meningkat penggunaannya
+Jawa Barat,padi,2023,Lokal,120,Masih ada di daerah tertentu
+Bali,padi,2023,Ciherang,180,Irigasi subak
+Bali,padi,2023,Lokal,60,Beras merah lokal
+Sumatera Utara,padi,2023,Ciherang,430,Dominan
+Sumatera Utara,jagung,2023,Pioneer36,310,Perkebunan
+Lampung,jagung,2023,Pioneer36,580,Dominan ladang Lampung
+Lampung,jagung,2023,Bisi18,220,Alternatif
+Lampung,singkong,2023,UJ3,640,Dominan
+Lampung,singkong,2023,Malang6,180,Produktivitas tinggi
+Sulawesi Selatan,padi,2023,Ciherang,510,Dominan lahan sawah
+Sulawesi Selatan,padi,2023,Inpari32,180,Berkembang
+NTB,padi,2023,Ciherang,320,Dominan
+NTB,jagung,2023,NK7328,190,Populer
+NTT,jagung,2023,Bisi18,160,Adaptif di lahan kering
+NTT,jagung,2023,Lokal,210,Masih umum

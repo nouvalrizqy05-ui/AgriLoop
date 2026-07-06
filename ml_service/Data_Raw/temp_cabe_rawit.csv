@@ -1,0 +1,165 @@
+ndvi,rainfall_mm,temperature_c,solar_radiation,land_area_ha,crop_type,harvest_days,yield_ton_per_ha,risk_level,provinsi,tahun,data_source,ndvi_source,produksi_ton,luas_panen_ha
+0.52,243.6,19.6,17.3,2.0,cabe_rawit,85,14.94,low,ACEH,2017,nasa_power,seasonal_estimate,53799.7,3601.0
+0.52,370.2,21.9,17.2,2.0,cabe_rawit,85,7.873,low,SUMATERA UTARA,2017,nasa_power,seasonal_estimate,31727.3,4030.0
+0.52,327.8,23.3,17.1,2.0,cabe_rawit,85,9.171,low,SUMATERA BARAT,2017,nasa_power,seasonal_estimate,22871.7,2494.0
+0.52,265.5,26.1,17.3,2.0,cabe_rawit,85,6.717,low,RIAU,2017,nasa_power,seasonal_estimate,10901.7,1623.0
+0.52,224.7,26.0,16.3,2.0,cabe_rawit,85,3.754,high,JAMBI,2017,nasa_power,seasonal_estimate,8352.5,2225.0
+0.52,237.2,26.0,17.9,2.0,cabe_rawit,85,8.05,low,SUMATERA SELATAN,2017,nasa_power,seasonal_estimate,15826.1,1966.0
+0.52,302.9,25.8,16.9,2.0,cabe_rawit,85,3.799,high,BENGKULU,2017,nasa_power,seasonal_estimate,7822.9,2059.0
+0.52,174.3,26.9,17.2,2.0,cabe_rawit,85,6.684,low,LAMPUNG,2017,nasa_power,seasonal_estimate,14705.4,2200.0
+0.52,211.0,27.4,16.6,2.0,cabe_rawit,85,3.679,high,KEPULAUAN BANGKA BELITUNG,2017,nasa_power,seasonal_estimate,1728.9,470.0
+0.52,166.3,27.9,17.0,2.0,cabe_rawit,85,3.524,high,KEPULAUAN RIAU,2017,nasa_power,seasonal_estimate,1060.8,301.0
+0.54,271.4,21.4,17.6,2.0,cabe_rawit,85,11.732,low,JAWA BARAT,2017,nasa_power,seasonal_estimate,134909.5,11499.0
+0.54,186.9,25.9,18.0,2.0,cabe_rawit,85,6.576,low,JAWA TENGAH,2017,nasa_power,seasonal_estimate,148139.0,22527.0
+0.54,185.9,25.7,18.0,2.0,cabe_rawit,85,6.198,low,DAERAH ISTIMEWA YOGYAKARTA,2017,nasa_power,seasonal_estimate,8386.2,1353.0
+0.54,168.9,26.4,18.5,2.0,cabe_rawit,85,4.97,medium,JAWA TIMUR,2017,nasa_power,seasonal_estimate,339021.7,68212.0
+0.54,223.9,25.5,17.0,2.0,cabe_rawit,85,7.544,low,BANTEN,2017,nasa_power,seasonal_estimate,4571.8,606.0
+0.54,165.7,25.0,19.2,2.0,cabe_rawit,85,6.078,low,BALI,2017,nasa_power,seasonal_estimate,31463.9,5177.0
+0.52,154.8,26.0,20.0,2.0,cabe_rawit,85,19.375,low,NUSA TENGGARA BARAT,2017,nasa_power,seasonal_estimate,156922.1,8099.0
+0.52,171.5,26.4,20.2,2.0,cabe_rawit,85,3.985,medium,NUSA TENGGARA TIMUR,2017,nasa_power,seasonal_estimate,5227.8,1312.0
+0.52,310.0,25.8,17.6,2.0,cabe_rawit,85,2.747,high,KALIMANTAN BARAT,2017,nasa_power,seasonal_estimate,4719.1,1718.0
+0.52,280.6,26.7,17.5,2.0,cabe_rawit,85,2.797,high,KALIMANTAN TENGAH,2017,nasa_power,seasonal_estimate,2774.4,992.0
+0.52,231.1,26.4,16.3,2.0,cabe_rawit,85,4.824,medium,KALIMANTAN SELATAN,2017,nasa_power,seasonal_estimate,11848.9,2456.0
+0.52,209.3,25.6,17.6,2.0,cabe_rawit,85,4.471,medium,KALIMANTAN TIMUR,2017,nasa_power,seasonal_estimate,6040.3,1351.0
+0.52,258.5,23.2,17.8,2.0,cabe_rawit,85,4.496,medium,KALIMANTAN UTARA,2017,nasa_power,seasonal_estimate,2706.7,602.0
+0.52,206.2,24.4,18.1,2.0,cabe_rawit,85,4.598,medium,SULAWESI UTARA,2017,nasa_power,seasonal_estimate,16915.0,3679.0
+0.52,201.6,21.7,16.8,2.0,cabe_rawit,85,7.221,low,SULAWESI TENGAH,2017,nasa_power,seasonal_estimate,21229.5,2940.0
+0.52,275.3,22.9,18.7,2.0,cabe_rawit,85,7.617,low,SULAWESI SELATAN,2017,nasa_power,seasonal_estimate,45770.3,6009.0
+0.52,319.0,26.4,17.5,2.0,cabe_rawit,85,2.358,high,SULAWESI TENGGARA,2017,nasa_power,seasonal_estimate,3312.9,1405.0
+0.52,220.1,25.9,18.1,2.0,cabe_rawit,85,9.642,low,GORONTALO,2017,nasa_power,seasonal_estimate,25125.8,2606.0
+0.52,221.6,20.6,17.0,2.0,cabe_rawit,85,3.934,medium,SULAWESI BARAT,2017,nasa_power,seasonal_estimate,2651.2,674.0
+0.52,272.4,26.7,16.1,2.0,cabe_rawit,85,4.68,medium,MALUKU,2017,nasa_power,seasonal_estimate,4038.6,863.0
+0.52,235.7,26.9,17.7,2.0,cabe_rawit,85,1.98,high,MALUKU UTARA,2017,nasa_power,seasonal_estimate,1261.5,637.0
+0.52,321.9,23.3,16.6,2.0,cabe_rawit,85,1.043,high,PAPUA BARAT,2017,nasa_power,seasonal_estimate,889.4,853.0
+0.52,247.5,23.1,15.9,2.0,cabe_rawit,85,6.055,low,PAPUA,2017,nasa_power,seasonal_estimate,6424.7,1061.0
+0.52,239.8,19.7,17.3,2.0,cabe_rawit,85,15.735,low,ACEH,2018,nasa_power,seasonal_estimate,62167.1,3951.0
+0.52,361.1,21.9,17.4,2.0,cabe_rawit,85,8.278,low,SUMATERA UTARA,2018,nasa_power,seasonal_estimate,39825.9,4811.0
+0.52,294.6,23.4,16.9,2.0,cabe_rawit,85,8.967,low,SUMATERA BARAT,2018,nasa_power,seasonal_estimate,25178.7,2808.0
+0.52,200.2,26.1,17.0,2.0,cabe_rawit,85,7.805,low,RIAU,2018,nasa_power,seasonal_estimate,12691.1,1626.0
+0.52,210.8,26.1,16.7,2.0,cabe_rawit,85,5.103,low,JAMBI,2018,nasa_power,seasonal_estimate,8271.7,1621.0
+0.52,206.4,25.9,17.9,2.0,cabe_rawit,85,8.535,low,SUMATERA SELATAN,2018,nasa_power,seasonal_estimate,13450.6,1576.0
+0.52,293.2,25.8,17.1,2.0,cabe_rawit,85,4.943,medium,BENGKULU,2018,nasa_power,seasonal_estimate,11353.1,2297.0
+0.52,155.2,27.0,17.6,2.0,cabe_rawit,85,6.467,low,LAMPUNG,2018,nasa_power,seasonal_estimate,14648.1,2265.0
+0.52,180.4,27.4,17.3,2.0,cabe_rawit,85,3.898,high,KEPULAUAN BANGKA BELITUNG,2018,nasa_power,seasonal_estimate,2034.7,522.0
+0.52,140.9,27.9,17.7,2.0,cabe_rawit,85,4.779,medium,KEPULAUAN RIAU,2018,nasa_power,seasonal_estimate,1715.7,359.0
+0.54,230.0,21.4,18.4,2.0,cabe_rawit,85,11.906,low,JAWA BARAT,2018,nasa_power,seasonal_estimate,131418.2,11038.0
+0.54,155.6,26.2,19.1,2.0,cabe_rawit,85,5.862,low,JAWA TENGAH,2018,nasa_power,seasonal_estimate,141770.5,24185.0
+0.54,162.2,25.9,19.1,2.0,cabe_rawit,85,7.379,low,DAERAH ISTIMEWA YOGYAKARTA,2018,nasa_power,seasonal_estimate,10146.8,1375.0
+0.54,140.9,26.8,19.4,2.0,cabe_rawit,85,6.431,low,JAWA TIMUR,2018,nasa_power,seasonal_estimate,453338.0,70493.0
+0.54,176.3,25.7,17.6,2.0,cabe_rawit,85,8.962,low,BANTEN,2018,nasa_power,seasonal_estimate,5224.6,583.0
+0.54,118.4,25.0,20.5,2.0,cabe_rawit,85,8.177,low,BALI,2018,nasa_power,seasonal_estimate,31653.9,3871.0
+0.52,132.6,26.6,20.8,2.0,cabe_rawit,85,3.517,high,NUSA TENGGARA TIMUR,2018,nasa_power,seasonal_estimate,5247.4,1492.0
+0.52,285.5,25.8,17.4,2.0,cabe_rawit,85,1.984,high,KALIMANTAN BARAT,2018,nasa_power,seasonal_estimate,4164.7,2099.0
+0.52,234.8,26.7,17.7,2.0,cabe_rawit,85,3.104,high,KALIMANTAN TENGAH,2018,nasa_power,seasonal_estimate,3638.1,1172.0
+0.52,239.5,26.5,17.3,2.0,cabe_rawit,85,5.146,low,KALIMANTAN SELATAN,2018,nasa_power,seasonal_estimate,12670.6,2462.0
+0.52,176.7,25.6,18.1,2.0,cabe_rawit,85,5.117,low,KALIMANTAN TIMUR,2018,nasa_power,seasonal_estimate,6795.8,1328.0
+0.52,237.2,23.2,18.2,2.0,cabe_rawit,85,5.858,low,KALIMANTAN UTARA,2018,nasa_power,seasonal_estimate,3298.3,563.0
+0.52,157.6,24.5,19.6,2.0,cabe_rawit,85,3.959,medium,SULAWESI UTARA,2018,nasa_power,seasonal_estimate,16469.7,4160.0
+0.52,160.7,21.7,17.6,2.0,cabe_rawit,85,6.547,low,SULAWESI TENGAH,2018,nasa_power,seasonal_estimate,26090.1,3985.0
+0.52,204.2,22.9,19.3,2.0,cabe_rawit,85,6.367,low,SULAWESI SELATAN,2018,nasa_power,seasonal_estimate,36568.5,5743.0
+0.52,204.5,26.5,18.5,2.0,cabe_rawit,85,3.203,high,SULAWESI TENGGARA,2018,nasa_power,seasonal_estimate,4484.2,1400.0
+0.52,156.3,26.0,19.6,2.0,cabe_rawit,85,9.226,low,GORONTALO,2018,nasa_power,seasonal_estimate,25694.6,2785.0
+0.52,179.4,20.6,17.6,2.0,cabe_rawit,85,3.875,high,SULAWESI BARAT,2018,nasa_power,seasonal_estimate,2658.1,686.0
+0.52,172.4,26.7,17.4,2.0,cabe_rawit,85,4.251,medium,MALUKU,2018,nasa_power,seasonal_estimate,3732.3,878.0
+0.52,155.2,27.0,19.2,2.0,cabe_rawit,85,1.368,high,MALUKU UTARA,2018,nasa_power,seasonal_estimate,1095.6,801.0
+0.52,239.1,23.2,17.2,2.0,cabe_rawit,85,1.063,high,PAPUA BARAT,2018,nasa_power,seasonal_estimate,624.8,588.0
+0.52,212.0,23.0,15.9,2.0,cabe_rawit,85,6.774,low,PAPUA,2018,nasa_power,seasonal_estimate,6943.1,1025.0
+0.52,170.9,20.1,17.8,2.0,cabe_rawit,85,15.296,low,ACEH,2019,nasa_power,seasonal_estimate,61886.6,4046.0
+0.52,300.3,22.3,17.1,2.0,cabe_rawit,85,9.717,low,SUMATERA UTARA,2019,nasa_power,seasonal_estimate,49246.2,5067.92
+0.52,231.3,23.8,16.6,2.0,cabe_rawit,85,10.766,low,SUMATERA BARAT,2019,nasa_power,seasonal_estimate,31782.4,2952.0
+0.52,157.7,26.5,17.1,2.0,cabe_rawit,85,6.132,low,RIAU,2019,nasa_power,seasonal_estimate,8120.12,1324.3
+0.52,175.7,26.4,16.6,2.0,cabe_rawit,85,6.851,low,JAMBI,2019,nasa_power,seasonal_estimate,9879.5,1442.0
+0.52,174.1,26.3,18.2,2.0,cabe_rawit,85,8.544,low,SUMATERA SELATAN,2019,nasa_power,seasonal_estimate,11013.5,1289.0
+0.52,203.9,26.1,17.5,2.0,cabe_rawit,85,4.518,medium,BENGKULU,2019,nasa_power,seasonal_estimate,11118.3,2461.0
+0.52,153.3,27.6,18.1,2.0,cabe_rawit,85,6.366,low,LAMPUNG,2019,nasa_power,seasonal_estimate,12795.8,2010.0
+0.52,168.8,27.8,17.5,2.0,cabe_rawit,85,4.419,medium,KEPULAUAN BANGKA BELITUNG,2019,nasa_power,seasonal_estimate,2001.9,453.0
+0.52,129.4,28.2,17.8,2.0,cabe_rawit,85,7.922,low,KEPULAUAN RIAU,2019,nasa_power,seasonal_estimate,2338.9,295.25
+0.54,225.6,21.6,19.2,2.0,cabe_rawit,85,12.174,low,JAWA BARAT,2019,nasa_power,seasonal_estimate,128494.1,10555.0
+0.54,145.1,26.5,19.6,2.0,cabe_rawit,85,6.226,low,JAWA TENGAH,2019,nasa_power,seasonal_estimate,148750.0,23892.0
+0.54,137.6,26.1,19.6,2.0,cabe_rawit,85,6.519,low,DAERAH ISTIMEWA YOGYAKARTA,2019,nasa_power,seasonal_estimate,10039.8,1540.0
+0.54,133.9,27.2,20.0,2.0,cabe_rawit,85,7.911,low,JAWA TIMUR,2019,nasa_power,seasonal_estimate,536097.7,67767.0
+0.54,159.4,26.1,18.4,2.0,cabe_rawit,85,9.227,low,BANTEN,2019,nasa_power,seasonal_estimate,5019.4,544.0
+0.54,86.9,25.3,21.2,2.0,cabe_rawit,85,7.736,low,BALI,2019,nasa_power,seasonal_estimate,28655.9,3704.0
+0.52,141.2,26.6,21.5,2.0,cabe_rawit,85,5.15,low,NUSA TENGGARA TIMUR,2019,nasa_power,seasonal_estimate,8816.0,1712.0
+0.52,270.9,26.0,17.5,2.0,cabe_rawit,85,2.759,high,KALIMANTAN BARAT,2019,nasa_power,seasonal_estimate,5730.6,2077.0
+0.52,209.3,26.9,17.5,2.0,cabe_rawit,85,4.84,medium,KALIMANTAN TENGAH,2019,nasa_power,seasonal_estimate,5864.48,1211.68
+0.52,181.0,27.0,18.1,2.0,cabe_rawit,85,5.671,low,KALIMANTAN SELATAN,2019,nasa_power,seasonal_estimate,13768.0,2428.0
+0.52,168.1,25.9,18.5,2.0,cabe_rawit,85,6.822,low,KALIMANTAN TIMUR,2019,nasa_power,seasonal_estimate,8029.3,1177.0
+0.52,231.3,23.4,18.4,2.0,cabe_rawit,85,7.129,low,KALIMANTAN UTARA,2019,nasa_power,seasonal_estimate,3821.1,536.0
+0.52,105.9,24.7,20.0,2.0,cabe_rawit,85,4.373,medium,SULAWESI UTARA,2019,nasa_power,seasonal_estimate,14760.2,3375.0
+0.52,155.2,21.8,17.7,2.0,cabe_rawit,85,6.177,low,SULAWESI TENGAH,2019,nasa_power,seasonal_estimate,22631.6,3664.0
+0.52,205.5,23.0,19.7,2.0,cabe_rawit,85,5.075,medium,SULAWESI SELATAN,2019,nasa_power,seasonal_estimate,26114.7,5146.0
+0.52,222.6,26.6,18.7,2.0,cabe_rawit,85,2.779,high,SULAWESI TENGGARA,2019,nasa_power,seasonal_estimate,3668.6,1320.0
+0.52,103.5,26.4,20.0,2.0,cabe_rawit,85,7.885,low,GORONTALO,2019,nasa_power,seasonal_estimate,20579.8,2610.0
+0.52,153.3,20.9,18.3,2.0,cabe_rawit,85,4.438,medium,SULAWESI BARAT,2019,nasa_power,seasonal_estimate,2663.0,600.0
+0.52,148.7,26.7,17.8,2.0,cabe_rawit,85,3.687,high,MALUKU,2019,nasa_power,seasonal_estimate,3440.4,933.0
+0.52,115.2,27.1,20.1,2.0,cabe_rawit,85,4.155,medium,MALUKU UTARA,2019,nasa_power,seasonal_estimate,4649.7,1119.0
+0.52,241.0,23.4,17.4,2.0,cabe_rawit,85,3.702,high,PAPUA BARAT,2019,nasa_power,seasonal_estimate,3276.5,885.0
+0.52,216.1,23.1,15.9,2.0,cabe_rawit,85,5.344,low,PAPUA,2019,nasa_power,seasonal_estimate,4388.27,821.2
+0.52,289.5,19.9,17.2,2.0,cabe_rawit,85,14.403,low,ACEH,2020,nasa_power,seasonal_estimate,64781.6,4497.69
+0.52,322.5,22.1,16.9,2.0,cabe_rawit,85,8.815,low,SUMATERA UTARA,2020,nasa_power,seasonal_estimate,61160.11,6938.48
+0.52,309.8,23.7,17.3,2.0,cabe_rawit,85,10.988,low,SUMATERA BARAT,2020,nasa_power,seasonal_estimate,33355.93,3035.6
+0.52,199.7,26.4,17.2,2.0,cabe_rawit,85,6.244,low,RIAU,2020,nasa_power,seasonal_estimate,8626.96,1381.62
+0.52,276.0,26.3,16.5,2.0,cabe_rawit,85,8.602,low,JAMBI,2020,nasa_power,seasonal_estimate,13587.98,1579.66
+0.52,264.3,26.2,17.4,2.0,cabe_rawit,85,7.122,low,SUMATERA SELATAN,2020,nasa_power,seasonal_estimate,11644.96,1635.0
+0.52,342.1,26.3,17.1,2.0,cabe_rawit,85,4.271,medium,BENGKULU,2020,nasa_power,seasonal_estimate,11475.7,2686.85
+0.52,216.7,27.0,16.8,2.0,cabe_rawit,85,5.536,low,LAMPUNG,2020,nasa_power,seasonal_estimate,10558.12,1907.2
+0.52,221.0,27.6,16.7,2.0,cabe_rawit,85,6.719,low,KEPULAUAN BANGKA BELITUNG,2020,nasa_power,seasonal_estimate,3385.92,503.92
+0.52,152.6,28.0,17.7,2.0,cabe_rawit,85,7.213,low,KEPULAUAN RIAU,2020,nasa_power,seasonal_estimate,2230.12,309.18
+0.54,340.0,21.8,17.4,2.0,cabe_rawit,85,13.179,low,JAWA BARAT,2020,nasa_power,seasonal_estimate,130838.47,9927.9
+0.54,225.3,26.1,18.3,2.0,cabe_rawit,85,7.198,low,JAWA TENGAH,2020,nasa_power,seasonal_estimate,159098.91,22104.24
+0.54,240.2,26.2,18.3,2.0,cabe_rawit,85,7.503,low,DAERAH ISTIMEWA YOGYAKARTA,2020,nasa_power,seasonal_estimate,15052.32,2006.15
+0.54,207.4,26.7,18.8,2.0,cabe_rawit,85,8.696,low,JAWA TIMUR,2020,nasa_power,seasonal_estimate,684942.94,78765.35
+0.54,261.4,25.9,16.7,2.0,cabe_rawit,85,11.1,low,BANTEN,2020,nasa_power,seasonal_estimate,5861.0,528.0
+0.54,141.9,25.7,20.1,2.0,cabe_rawit,85,9.431,low,BALI,2020,nasa_power,seasonal_estimate,35331.32,3746.28
+0.52,118.4,26.9,20.7,2.0,cabe_rawit,85,11.399,low,NUSA TENGGARA BARAT,2020,nasa_power,seasonal_estimate,98941.4,8679.5
+0.52,163.4,26.8,20.9,2.0,cabe_rawit,85,6.371,low,NUSA TENGGARA TIMUR,2020,nasa_power,seasonal_estimate,10467.9,1643.07
+0.52,343.9,26.0,17.4,2.0,cabe_rawit,85,2.583,high,KALIMANTAN BARAT,2020,nasa_power,seasonal_estimate,6132.54,2374.3
+0.52,259.5,27.0,18.0,2.0,cabe_rawit,85,5.347,low,KALIMANTAN TENGAH,2020,nasa_power,seasonal_estimate,6124.11,1145.31
+0.52,332.3,26.8,16.8,2.0,cabe_rawit,85,6.706,low,KALIMANTAN SELATAN,2020,nasa_power,seasonal_estimate,15615.78,2328.5
+0.52,202.3,25.9,18.2,2.0,cabe_rawit,85,6.149,low,KALIMANTAN TIMUR,2020,nasa_power,seasonal_estimate,9080.98,1476.72
+0.52,272.0,23.3,18.0,2.0,cabe_rawit,85,6.524,low,KALIMANTAN UTARA,2020,nasa_power,seasonal_estimate,3330.41,510.51
+0.52,177.9,24.8,18.7,2.0,cabe_rawit,85,5.5,low,SULAWESI UTARA,2020,nasa_power,seasonal_estimate,22414.49,4075.2
+0.52,269.0,21.9,17.1,2.0,cabe_rawit,85,6.088,low,SULAWESI TENGAH,2020,nasa_power,seasonal_estimate,25041.74,4113.1
+0.52,291.9,23.1,18.7,2.0,cabe_rawit,85,4.599,medium,SULAWESI SELATAN,2020,nasa_power,seasonal_estimate,24051.58,5229.2
+0.52,265.2,26.5,17.5,2.0,cabe_rawit,85,2.641,high,SULAWESI TENGGARA,2020,nasa_power,seasonal_estimate,3801.35,1439.15
+0.52,188.4,26.4,18.7,2.0,cabe_rawit,85,7.376,low,GORONTALO,2020,nasa_power,seasonal_estimate,14729.22,1997.0
+0.52,258.6,20.9,17.2,2.0,cabe_rawit,85,1.24,high,SULAWESI BARAT,2020,nasa_power,seasonal_estimate,1398.65,1128.0
+0.52,217.5,26.9,17.2,2.0,cabe_rawit,85,5.626,low,MALUKU,2020,nasa_power,seasonal_estimate,5027.25,893.5
+0.52,211.0,27.5,18.7,2.0,cabe_rawit,85,3.792,high,MALUKU UTARA,2020,nasa_power,seasonal_estimate,4527.48,1194.0
+0.52,278.6,23.7,17.7,2.0,cabe_rawit,85,3.473,high,PAPUA BARAT,2020,nasa_power,seasonal_estimate,2350.52,676.82
+0.52,226.0,23.3,16.3,2.0,cabe_rawit,85,5.863,low,PAPUA,2020,nasa_power,seasonal_estimate,3436.42,586.15
+0.52,251.7,19.6,17.5,2.0,cabe_rawit,85,12.63,low,ACEH,2021,nasa_power,seasonal_estimate,51686.25,4092.34
+0.52,300.3,21.9,17.5,2.0,cabe_rawit,85,12.751,low,SUMATERA UTARA,2021,nasa_power,seasonal_estimate,78662.97,6169.4
+0.52,346.5,23.4,17.4,2.0,cabe_rawit,85,11.585,low,SUMATERA BARAT,2021,nasa_power,seasonal_estimate,35117.92,3031.34
+0.52,261.3,26.1,17.5,2.0,cabe_rawit,85,5.933,low,RIAU,2021,nasa_power,seasonal_estimate,6693.87,1128.32
+0.52,235.1,26.0,16.4,2.0,cabe_rawit,85,8.636,low,JAMBI,2021,nasa_power,seasonal_estimate,11526.13,1334.73
+0.52,264.9,25.9,17.8,2.0,cabe_rawit,85,6.207,low,SUMATERA SELATAN,2021,nasa_power,seasonal_estimate,11562.44,1862.93
+0.52,316.2,26.0,17.4,2.0,cabe_rawit,85,5.633,low,BENGKULU,2021,nasa_power,seasonal_estimate,16278.13,2889.79
+0.52,199.3,26.8,16.8,2.0,cabe_rawit,85,5.675,low,LAMPUNG,2021,nasa_power,seasonal_estimate,10921.29,1924.55
+0.52,211.0,27.4,16.9,2.0,cabe_rawit,85,7.778,low,KEPULAUAN BANGKA BELITUNG,2021,nasa_power,seasonal_estimate,3954.1,508.37
+0.52,164.6,27.9,17.4,2.0,cabe_rawit,85,6.606,low,KEPULAUAN RIAU,2021,nasa_power,seasonal_estimate,1626.96,246.29
+0.54,242.4,27.3,16.8,2.0,cabe_rawit,85,1.2,high,DAERAH KHUSUS IBUKOTA JAKARTA,2021,nasa_power,seasonal_estimate,0.6,0.5
+0.54,292.7,21.5,17.2,2.0,cabe_rawit,85,12.933,low,JAWA BARAT,2021,nasa_power,seasonal_estimate,137456.25,10627.94
+0.54,227.5,25.8,17.9,2.0,cabe_rawit,85,8.504,low,JAWA TENGAH,2021,nasa_power,seasonal_estimate,179286.91,21083.05
+0.54,234.8,26.0,17.9,2.0,cabe_rawit,85,8.001,low,DAERAH ISTIMEWA YOGYAKARTA,2021,nasa_power,seasonal_estimate,15933.22,1991.39
+0.54,200.7,26.5,18.1,2.0,cabe_rawit,85,7.332,low,JAWA TIMUR,2021,nasa_power,seasonal_estimate,578883.0,78955.94
+0.54,254.3,25.6,16.8,2.0,cabe_rawit,85,8.753,low,BANTEN,2021,nasa_power,seasonal_estimate,3993.26,456.22
+0.54,195.3,25.2,19.5,2.0,cabe_rawit,85,8.337,low,BALI,2021,nasa_power,seasonal_estimate,29174.92,3499.43
+0.52,151.8,26.2,19.9,2.0,cabe_rawit,85,7.75,low,NUSA TENGGARA BARAT,2021,nasa_power,seasonal_estimate,62538.86,8069.69
+0.52,245.2,26.6,20.2,2.0,cabe_rawit,85,6.52,low,NUSA TENGGARA TIMUR,2021,nasa_power,seasonal_estimate,9075.94,1392.05
+0.52,336.7,25.8,17.6,2.0,cabe_rawit,85,2.698,high,KALIMANTAN BARAT,2021,nasa_power,seasonal_estimate,6331.79,2346.54
+0.52,256.6,26.8,17.7,2.0,cabe_rawit,85,7.107,low,KALIMANTAN TENGAH,2021,nasa_power,seasonal_estimate,6961.43,979.5
+0.52,269.6,26.4,16.4,2.0,cabe_rawit,85,5.681,low,KALIMANTAN SELATAN,2021,nasa_power,seasonal_estimate,11757.72,2069.65
+0.52,226.2,25.7,17.4,2.0,cabe_rawit,85,5.749,low,KALIMANTAN TIMUR,2021,nasa_power,seasonal_estimate,8367.13,1455.5
+0.52,243.4,23.2,18.0,2.0,cabe_rawit,85,11.165,low,KALIMANTAN UTARA,2021,nasa_power,seasonal_estimate,5818.88,521.15
+0.52,217.0,24.5,18.4,2.0,cabe_rawit,85,5.393,low,SULAWESI UTARA,2021,nasa_power,seasonal_estimate,17370.63,3220.95
+0.52,208.8,21.7,16.9,2.0,cabe_rawit,85,5.38,low,SULAWESI TENGAH,2021,nasa_power,seasonal_estimate,22198.53,4126.29
+0.52,295.7,22.9,18.5,2.0,cabe_rawit,85,5.526,low,SULAWESI SELATAN,2021,nasa_power,seasonal_estimate,26423.23,4781.7
+0.52,232.4,26.4,17.1,2.0,cabe_rawit,85,3.387,high,SULAWESI TENGGARA,2021,nasa_power,seasonal_estimate,4286.7,1265.66
+0.52,235.8,25.9,18.4,2.0,cabe_rawit,85,6.084,low,GORONTALO,2021,nasa_power,seasonal_estimate,13031.76,2142.0
+0.52,258.8,20.6,17.1,2.0,cabe_rawit,85,0.775,high,SULAWESI BARAT,2021,nasa_power,seasonal_estimate,3335.74,4304.5
+0.52,226.2,26.8,16.6,2.0,cabe_rawit,85,4.763,medium,MALUKU,2021,nasa_power,seasonal_estimate,3596.23,754.98
+0.52,246.2,27.0,18.0,2.0,cabe_rawit,85,5.237,low,MALUKU UTARA,2021,nasa_power,seasonal_estimate,3732.51,712.69
+0.52,293.4,23.4,16.8,2.0,cabe_rawit,85,5.282,low,PAPUA BARAT,2021,nasa_power,seasonal_estimate,3807.59,720.9
+0.52,217.9,23.2,16.2,2.0,cabe_rawit,85,7.904,low,PAPUA,2021,nasa_power,seasonal_estimate,5054.05,639.4

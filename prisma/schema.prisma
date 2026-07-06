@@ -1,0 +1,139 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+enum UserRole {
+  PETANI
+  DISTRIBUTOR
+  KONSUMEN
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  COMPLETED
+  CANCELLED
+}
+
+// B2B = dibuat oleh DISTRIBUTOR (agregasi lintas-petani, tanpa titik jemput).
+// B2C = dibuat oleh KONSUMEN (kuantitas kecil, WAJIB punya pickupPointId --
+// lihat komentar di model Order soal alasan desain "titik jemput" ini).
+enum OrderType {
+  B2B
+  B2C
+}
+
+model User {
+  id           String    @id @default(cuid())
+  name         String
+  email        String    @unique
+  passwordHash String
+  role         UserRole
+  location     String?
+  phone        String?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  products     Product[] @relation("PetaniProducts")
+  orders       Order[]   @relation("BuyerOrders")
+}
+
+model Product {
+  id           String         @id @default(cuid())
+  petaniId     String
+  petani       User           @relation("PetaniProducts", fields: [petaniId], references: [id])
+  name         String
+  category     String
+  price        Decimal        @db.Decimal(12, 2)
+  quantity     Decimal        @db.Decimal(12, 2)
+  unit         String
+  photoUrl     String?
+  status       String         @default("AVAILABLE")
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  orderItems   OrderItem[]
+  priceHistory PriceHistory[]
+
+  @@index([category])
+  @@index([petaniId])
+}
+
+model Order {
+  id              String        @id @default(cuid())
+  buyerId         String
+  buyer           User          @relation("BuyerOrders", fields: [buyerId], references: [id])
+  orderType       OrderType
+  status          OrderStatus   @default(PENDING)
+  totalAggregated Decimal       @default(0) @db.Decimal(14, 2)
+  // Wajib diisi untuk orderType = B2C (divalidasi di application layer,
+  // BUKAN di skema -- Prisma tidak punya conditional-required-field native).
+  // Alasan desain: mencegah AgriLoop mengulang kesalahan TaniHub (mundur
+  // dari B2C 2022 karena last-mile delivery per rumah tidak scalable).
+  // Konsumen ambil sendiri di titik kumpul, bukan diantar ke rumah.
+  pickupPointId   String?
+  pickupPoint     PickupPoint?  @relation(fields: [pickupPointId], references: [id])
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  items           OrderItem[]
+
+  @@index([buyerId])
+  @@index([pickupPointId])
+}
+
+// Titik kumpul desa/kecamatan untuk pengambilan pesanan B2C.
+// MVP: dikelola manual oleh admin/tim (CRUD sederhana), BELUM ada alur
+// pendaftaran mandiri untuk BUMDes -- itu perlu proses verifikasi manual
+// di luar sistem (siapa yang pegang kunci, jam operasional, dst), yang
+// TIDAK bisa diselesaikan murni lewat kode dalam sisa waktu yang ada.
+model PickupPoint {
+  id            String   @id @default(cuid())
+  name          String
+  kecamatan     String
+  desa          String?
+  address       String
+  contactPhone  String?
+  isActive      Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  orders        Order[]
+
+  @@index([kecamatan])
+}
+
+model OrderItem {
+  id           String  @id @default(cuid())
+  orderId      String
+  order        Order   @relation(fields: [orderId], references: [id])
+  productId    String
+  product      Product @relation(fields: [productId], references: [id])
+  quantity     Decimal @db.Decimal(12, 2)
+  priceAtOrder Decimal @db.Decimal(12, 2)
+
+  @@index([orderId])
+  @@index([productId])
+}
+
+model PriceHistory {
+  id         String   @id @default(cuid())
+  productId  String?
+  product    Product? @relation(fields: [productId], references: [id])
+  category   String
+  region     String?
+  price      Decimal  @db.Decimal(12, 2)
+  // NULL productId + isReference=true = harga acuan statis yang di-seed
+  // manual dari sumber publik (BUKAN live feed -- API PIHPS/Panel Harga
+  // Badan Pangan Nasional belum diverifikasi punya endpoint terbuka).
+  // `source` WAJIB diisi untuk baris referensi supaya bisa ditunjukkan
+  // ke juri dari mana angkanya berasal, bukan diklaim "real-time" tanpa
+  // bukti -- ini koreksi langsung atas overclaim yang sudah ditandai
+  // sebelumnya di blueprint.
+  isReference Boolean  @default(false)
+  source     String?
+  recordedAt DateTime @default(now())
+
+  @@index([category, region])
+}

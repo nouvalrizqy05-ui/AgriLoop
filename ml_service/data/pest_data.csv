@@ -1,0 +1,19 @@
+provinsi,crop_type,tahun,musim,pest_type,pest_pressure,luas_terserang_ha,keterangan
+Jawa Timur,padi,2023,MH,wereng_coklat,0.7,120,Serangan berat di Kabupaten Jember
+Jawa Timur,padi,2023,MK,blast,0.4,45,Serangan sedang
+Jawa Tengah,padi,2023,MH,penggerek_batang,0.3,80,Serangan ringan
+Jawa Tengah,jagung,2023,MK,ulat_grayak,0.6,60,Serangan sedang di Kabupaten Grobogan
+Jawa Barat,padi,2023,MH,wereng_coklat,0.5,95,Waspada
+Jawa Barat,kedelai,2023,MK,kutu_daun,0.4,30,Ringan
+Bali,padi,2023,MH,blast,0.3,25,Ringan
+Sumatera Utara,padi,2023,MH,penggerek_batang,0.4,70,Sedang
+Sumatera Utara,jagung,2023,MK,ulat_grayak,0.5,50,Sedang
+Lampung,jagung,2023,MH,busuk_batang,0.6,110,Sedang-berat
+Lampung,singkong,2023,MH,kutu_daun,0.3,40,Ringan
+Sulawesi Selatan,padi,2023,MH,wereng_coklat,0.4,85,Sedang
+Sulawesi Selatan,jagung,2023,MK,ulat_grayak,0.3,35,Ringan
+Sulawesi Tengah,padi,2023,MH,blast,0.2,20,Ringan
+Kalimantan Selatan,padi,2023,MH,penggerek_batang,0.3,55,Ringan
+NTB,padi,2023,MH,wereng_coklat,0.5,75,Sedang
+NTB,jagung,2023,MK,tidak_ada,0.0,0,Aman
+NTT,jagung,2023,MH,ulat_grayak,0.4,45,Sedang

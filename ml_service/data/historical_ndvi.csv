@@ -1,0 +1,260 @@
+code,name,year,ndvi
+11,Aceh,2019,0.833
+11,Aceh,2020,0.796
+11,Aceh,2021,0.752
+11,Aceh,2022,0.823
+11,Aceh,2023,0.823
+11,Aceh,2024,0.848
+11,Aceh,2025,0.826
+12,Sumatera Utara,2019,0.45
+12,Sumatera Utara,2020,0.321
+12,Sumatera Utara,2021,0.512
+12,Sumatera Utara,2022,0.656
+12,Sumatera Utara,2023,0.371
+12,Sumatera Utara,2024,0.436
+12,Sumatera Utara,2025,0.631
+13,Sumatera Barat,2019,0.693
+13,Sumatera Barat,2020,0.684
+13,Sumatera Barat,2021,0.737
+13,Sumatera Barat,2022,0.799
+13,Sumatera Barat,2023,0.714
+13,Sumatera Barat,2024,0.579
+13,Sumatera Barat,2025,0.704
+14,Riau,2019,0.671
+14,Riau,2020,0.7
+14,Riau,2021,0.668
+14,Riau,2022,0.695
+14,Riau,2023,0.663
+14,Riau,2024,0.577
+14,Riau,2025,0.804
+15,Jambi,2019,0.453
+15,Jambi,2020,0.571
+15,Jambi,2021,0.455
+15,Jambi,2022,0.473
+15,Jambi,2023,0.458
+15,Jambi,2024,0.418
+15,Jambi,2025,0.46
+16,Sumatera Selatan,2019,0.739
+16,Sumatera Selatan,2020,0.664
+16,Sumatera Selatan,2021,0.563
+16,Sumatera Selatan,2022,0.744
+16,Sumatera Selatan,2023,0.68
+16,Sumatera Selatan,2024,0.642
+16,Sumatera Selatan,2025,0.606
+17,Bengkulu,2019,0.835
+17,Bengkulu,2020,0.831
+17,Bengkulu,2021,0.842
+17,Bengkulu,2022,0.855
+17,Bengkulu,2023,0.822
+17,Bengkulu,2024,0.834
+17,Bengkulu,2025,0.789
+18,Lampung,2019,0.647
+18,Lampung,2020,0.646
+18,Lampung,2021,0.668
+18,Lampung,2022,0.69
+18,Lampung,2023,0.63
+18,Lampung,2024,0.731
+18,Lampung,2025,0.641
+19,Kepulauan Bangka Belitung,2019,0.538
+19,Kepulauan Bangka Belitung,2020,0.589
+19,Kepulauan Bangka Belitung,2021,0.624
+19,Kepulauan Bangka Belitung,2022,0.56
+19,Kepulauan Bangka Belitung,2023,0.549
+19,Kepulauan Bangka Belitung,2024,0.499
+19,Kepulauan Bangka Belitung,2025,0.573
+21,Kepulauan Riau,2019,0.717
+21,Kepulauan Riau,2020,0.655
+21,Kepulauan Riau,2021,0.725
+21,Kepulauan Riau,2022,0.722
+21,Kepulauan Riau,2023,0.657
+21,Kepulauan Riau,2024,0.711
+21,Kepulauan Riau,2025,0.539
+31,DKI Jakarta,2019,0.223
+31,DKI Jakarta,2020,0.198
+31,DKI Jakarta,2021,0.237
+31,DKI Jakarta,2022,0.229
+31,DKI Jakarta,2023,0.207
+31,DKI Jakarta,2024,0.235
+31,DKI Jakarta,2025,0.215
+32,Jawa Barat,2019,0.281
+32,Jawa Barat,2020,0.292
+32,Jawa Barat,2021,0.267
+32,Jawa Barat,2022,0.325
+32,Jawa Barat,2023,0.285
+32,Jawa Barat,2024,0.28
+32,Jawa Barat,2025,0.301
+33,Jawa Tengah,2019,0.812
+33,Jawa Tengah,2020,0.777
+33,Jawa Tengah,2021,0.786
+33,Jawa Tengah,2022,0.753
+33,Jawa Tengah,2023,0.737
+33,Jawa Tengah,2024,0.819
+33,Jawa Tengah,2025,0.792
+34,DI Yogyakarta,2019,0.826
+34,DI Yogyakarta,2020,0.794
+34,DI Yogyakarta,2021,0.739
+34,DI Yogyakarta,2022,0.826
+34,DI Yogyakarta,2023,0.792
+34,DI Yogyakarta,2024,0.794
+34,DI Yogyakarta,2025,0.798
+35,Jawa Timur,2019,0.328
+35,Jawa Timur,2020,0.344
+35,Jawa Timur,2021,0.324
+35,Jawa Timur,2022,0.327
+35,Jawa Timur,2023,0.323
+35,Jawa Timur,2024,0.311
+35,Jawa Timur,2025,0.317
+36,Banten,2019,0.724
+36,Banten,2020,0.736
+36,Banten,2021,0.765
+36,Banten,2022,0.778
+36,Banten,2023,0.726
+36,Banten,2024,0.728
+36,Banten,2025,0.818
+51,Bali,2019,0.763
+51,Bali,2020,0.724
+51,Bali,2021,0.697
+51,Bali,2022,0.723
+51,Bali,2023,0.716
+51,Bali,2024,0.686
+51,Bali,2025,0.698
+52,Nusa Tenggara Barat,2019,0.77
+52,Nusa Tenggara Barat,2020,0.69
+52,Nusa Tenggara Barat,2021,0.718
+52,Nusa Tenggara Barat,2022,0.727
+52,Nusa Tenggara Barat,2023,0.709
+52,Nusa Tenggara Barat,2024,0.75
+52,Nusa Tenggara Barat,2025,0.726
+53,Nusa Tenggara Timur,2019,0.792
+53,Nusa Tenggara Timur,2020,0.814
+53,Nusa Tenggara Timur,2021,0.793
+53,Nusa Tenggara Timur,2022,0.812
+53,Nusa Tenggara Timur,2023,0.784
+53,Nusa Tenggara Timur,2024,0.825
+53,Nusa Tenggara Timur,2025,0.829
+61,Kalimantan Barat,2019,0.507
+61,Kalimantan Barat,2020,0.574
+61,Kalimantan Barat,2021,0.639
+61,Kalimantan Barat,2022,0.593
+61,Kalimantan Barat,2023,0.468
+61,Kalimantan Barat,2024,0.55
+61,Kalimantan Barat,2025,0.534
+62,Kalimantan Tengah,2019,0.59
+62,Kalimantan Tengah,2020,0.599
+62,Kalimantan Tengah,2021,0.653
+62,Kalimantan Tengah,2022,0.657
+62,Kalimantan Tengah,2023,0.568
+62,Kalimantan Tengah,2024,0.63
+62,Kalimantan Tengah,2025,0.561
+63,Kalimantan Selatan,2019,0.829
+63,Kalimantan Selatan,2020,0.837
+63,Kalimantan Selatan,2021,0.724
+63,Kalimantan Selatan,2022,0.756
+63,Kalimantan Selatan,2023,0.753
+63,Kalimantan Selatan,2024,0.808
+63,Kalimantan Selatan,2025,0.756
+64,Kalimantan Timur,2019,0.809
+64,Kalimantan Timur,2020,0.869
+64,Kalimantan Timur,2021,0.825
+64,Kalimantan Timur,2022,0.861
+64,Kalimantan Timur,2023,0.771
+64,Kalimantan Timur,2024,0.802
+64,Kalimantan Timur,2025,0.735
+65,Kalimantan Utara,2019,0.686
+65,Kalimantan Utara,2020,0.656
+65,Kalimantan Utara,2021,0.721
+65,Kalimantan Utara,2022,0.79
+65,Kalimantan Utara,2023,0.732
+65,Kalimantan Utara,2024,0.712
+65,Kalimantan Utara,2025,0.695
+71,Sulawesi Utara,2019,0.386
+71,Sulawesi Utara,2020,0.386
+71,Sulawesi Utara,2021,0.406
+71,Sulawesi Utara,2022,0.392
+71,Sulawesi Utara,2023,0.337
+71,Sulawesi Utara,2024,0.336
+71,Sulawesi Utara,2025,0.342
+72,Sulawesi Tengah,2019,0.628
+72,Sulawesi Tengah,2020,0.695
+72,Sulawesi Tengah,2021,0.662
+72,Sulawesi Tengah,2022,0.694
+72,Sulawesi Tengah,2023,0.697
+72,Sulawesi Tengah,2024,0.685
+72,Sulawesi Tengah,2025,0.713
+73,Sulawesi Selatan,2019,0.836
+73,Sulawesi Selatan,2020,0.815
+73,Sulawesi Selatan,2021,0.743
+73,Sulawesi Selatan,2022,0.875
+73,Sulawesi Selatan,2023,0.788
+73,Sulawesi Selatan,2024,0.813
+73,Sulawesi Selatan,2025,0.844
+74,Sulawesi Tenggara,2019,0.804
+74,Sulawesi Tenggara,2020,0.688
+74,Sulawesi Tenggara,2021,0.789
+74,Sulawesi Tenggara,2022,0.693
+74,Sulawesi Tenggara,2023,0.812
+74,Sulawesi Tenggara,2024,0.791
+74,Sulawesi Tenggara,2025,0.69
+75,Gorontalo,2019,0.585
+75,Gorontalo,2020,0.588
+75,Gorontalo,2021,0.555
+75,Gorontalo,2022,0.62
+75,Gorontalo,2023,0.574
+75,Gorontalo,2024,0.559
+75,Gorontalo,2025,0.598
+76,Sulawesi Barat,2019,0.743
+76,Sulawesi Barat,2020,0.802
+76,Sulawesi Barat,2021,0.548
+76,Sulawesi Barat,2022,0.769
+76,Sulawesi Barat,2023,0.776
+76,Sulawesi Barat,2024,0.679
+76,Sulawesi Barat,2025,0.736
+81,Maluku,2019,0.751
+81,Maluku,2020,0.743
+81,Maluku,2021,0.781
+81,Maluku,2022,0.69
+81,Maluku,2023,0.762
+81,Maluku,2024,0.756
+81,Maluku,2025,0.809
+82,Maluku Utara,2019,0.814
+82,Maluku Utara,2020,0.741
+82,Maluku Utara,2021,0.791
+82,Maluku Utara,2022,0.792
+82,Maluku Utara,2023,0.744
+82,Maluku Utara,2024,0.733
+82,Maluku Utara,2025,0.754
+91,Papua Barat,2019,0.833
+91,Papua Barat,2020,0.867
+91,Papua Barat,2021,0.741
+91,Papua Barat,2022,0.831
+91,Papua Barat,2023,0.867
+91,Papua Barat,2024,0.723
+91,Papua Barat,2025,0.796
+92,Papua,2019,0.485
+92,Papua,2020,0.47
+92,Papua,2021,0.471
+92,Papua,2022,0.422
+92,Papua,2023,0.361
+92,Papua,2024,0.471
+92,Papua,2025,0.524
+93,Papua Selatan,2019,0.648
+93,Papua Selatan,2020,0.619
+93,Papua Selatan,2021,0.701
+93,Papua Selatan,2022,0.63
+93,Papua Selatan,2023,0.619
+93,Papua Selatan,2024,0.663
+93,Papua Selatan,2025,0.723
+94,Papua Tengah,2019,0.854
+94,Papua Tengah,2020,0.884
+94,Papua Tengah,2021,0.828
+94,Papua Tengah,2022,0.839
+94,Papua Tengah,2023,0.775
+94,Papua Tengah,2024,0.752
+94,Papua Tengah,2025,0.779
+95,Papua Pegunungan,2019,0.42
+95,Papua Pegunungan,2020,0.434
+95,Papua Pegunungan,2021,0.451
+95,Papua Pegunungan,2022,0.407
+95,Papua Pegunungan,2023,0.391
+95,Papua Pegunungan,2024,0.39
+95,Papua Pegunungan,2025,0.341

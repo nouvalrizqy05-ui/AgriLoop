@@ -1,0 +1,4 @@
+ndvi,rainfall_mm,temperature_c,solar_radiation,land_area_ha,crop_type,harvest_days,yield_ton_per_ha,risk_level,provinsi,tahun,data_source
+0.68,180,27.5,195,1.5,padi,105,5.3,low,Jawa Timur,2023,kementan
+0.55,95,29.0,210,2.0,jagung,98,5.1,medium,Jawa Tengah,2023,kementan
+0.5,120,28.0,185,0.8,kedelai,90,1.4,medium,Jawa Barat,2023,kementan
